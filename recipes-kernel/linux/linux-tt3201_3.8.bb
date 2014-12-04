@@ -10,7 +10,7 @@ inherit kernel
 require recipes-kernel/linux/linux-dtb.inc
 require recipes-kernel/linux/setup-defconfig.inc
 
-RDEPENDS_kernel-base += "kernel-devicetree"
+RDEPENDS_kernel-base += " kernel-devicetree"
 RDEPENDS_kernel-base_append_dra7xx = " vpe-vpdma-fw"
 
 KERNEL_DEVICETREE_beaglebone = "am335x-bone.dtb am335x-boneblack.dtb"
